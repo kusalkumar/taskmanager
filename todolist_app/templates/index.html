@@ -1,0 +1,34 @@
+{% include 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+    <title> Welcome </title>
+ 
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+	<div class="row mt-5">
+	    <div class="col-lg-4">
+		<img src="{% static 'images/stickytagnotes.jpg' %}" class="rounded-3 shadow-sm" alt="Notes" width="360" height="250">
+            </div>
+	    <div class="col-lg-4">
+		<img src="{% static 'images/stickytagnotes.jpg' %}" class="rounded-3 shadow-sm" alt="Notes" width="360" height="250">
+            </div>
+	    <div class="col-lg-4">
+		<img src="{% static 'images/stickytagnotes.jpg' %}" class="rounded-3 shadow-sm" alt="Notes" width="360" height="250">
+            </div>
+	</div>
+
+	<div class="row">
+	    <div class="col-md-12 center-block text-center mt-5">
+	        <p class="h1 text-primary"> Quick And Easy To Use, Anytime, Anywhere! </p>
+	        <p class="h2 mt-3"> "Plan Your Day Better, Get Your Life Organised" </p>
+	        <p class="h5"> TaskMATE Lets You Keep Track Of Your Task In One Place </p>
+
+		<a href="{% url 'todolist' %}"><button type="button" class="btn btn-primary btn-lg mt-3 shadow">Let's Get Started</button></a>
+	    </div>
+	</div>
+    </div>
+{% endblock %}
