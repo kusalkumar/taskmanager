@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block title %}
-<title> T9odo list Manager - Taskmate</title>
+<title> Todo list Manager - Taskmanager</title>
 {% endblock title %}
 
 {% block content %}
@@ -17,9 +17,6 @@
      </div>
   {% endfor %}
   {% endif %}
-
-
-
 
   <form method="POST" class="row">
 	  {% csrf_token %}
